@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task03</title>
+</head>
+<body>
+    <!-- 
+        분석 결과
+        --------------------------(hr)
+        통과!
+
+        정확한 암호가 입력될 때까지 계속 prompt()를 사용하여 암호를 입력받는다.
+        암호는 "호랑이"이다.
+
+     -->
+
+    <h3>분석 결과</h3>
+        <hr>
+</body>
+<script>
+    var answer = '호랑이';
+    var check = false;
+    var cnt = -1;
+    while(!check){
+        cnt++;
+        var pw = prompt('암구호를 입력하세요.'); // 입력 창이 나왔을 때 새로고침을 하면 입력이 된 것으로 인식된다.
+        /* check = pw == answer; */
+        if(answer == pw) {
+            check = true;
+            break;
+        } else {
+            alert('잘못 입력하셨습니다. 다시 입력하세요.');
+        }
+    } 
+    if(check)alert('통과!');
+    if(check)document.write('통과!');
+
+</script>
+</html>
