@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>실습</title>
+<link rel="stylesheet" href="task01.css">
+</head>
+<body>
+	<table border="1">
+		<caption>요금표</caption>
+		<thead>
+			<tr>
+				<th>구분</th>
+				<th>요금</th>
+			</tr>
+		</thead>
+		<tr class="data">
+			<td>아동</td>
+			<td>무료</td>
+		</tr>
+		<tr class="data">
+			<td>청소년</td>
+			<td>2000</td>
+		</tr>
+		<tr class="data">
+			<td>성인</td>
+			<td>5000</td>
+		</tr>
+	</table>
+    <!-- <fieldset>
+		<legend>구분</legend>
+		<input type="text" onkeypress="if(event.keyCode==13){btn();}">
+		<button onclick="btn()">확인</button>
+    </fieldset> -->
+	<fieldset>
+		<legend>구분</legend>
+		<input type="text" id="choice">
+		<button onclick="confirm()">확인</button>
+	</fieldset>
+
+</body>
+<script src="task01.js"></script>
+</html>
+

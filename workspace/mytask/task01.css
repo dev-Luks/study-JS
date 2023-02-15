@@ -1,0 +1,17 @@
+ thead {
+    background: bisque;
+ }
+
+ table {
+	margin: 0 auto;
+	font-family: "";
+	text-align: center;
+	width: 50%;
+}
+
+fieldset {
+    text-align: center; 
+    width: 60%; 
+    margin: 0 auto;
+}
+
